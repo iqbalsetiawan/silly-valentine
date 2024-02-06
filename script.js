@@ -17,11 +17,10 @@ function answer(response) {
   const gifContainer = document.getElementById("gif-container");
   const answerButtons = document.getElementById("answer-buttons");
   const valentineMessage = document.getElementById("valentine-message");
-  const valentineGif = document.getElementById("valentine-gif");
 
   if (response === "yes") {
     gifContainer.innerHTML = "";
-    valentineMessage.innerText = "LET'S GO SAYANG LOVE YOU!";
+    valentineMessage.innerText = "LET'S GO BABY LOVE YOU!";
 
     const gifPaths = [
       "./assets/yes1.gif",
