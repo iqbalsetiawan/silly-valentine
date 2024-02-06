@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    const loadingScreen = document.getElementById("loading-screen");
+    const valentineContainer = document.getElementById("valentine-container");
+
+    loadingScreen.style.opacity = 0;
+    loadingScreen.style.visibility = "hidden";
+    valentineContainer.style.display = "block";
+
+    setTimeout(() => {
+      valentineContainer.style.opacity = 1;
+    }, 50);
+  }, 2000);
+});
+
 function answer(response) {
   const gifContainer = document.getElementById("gif-container");
   const answerButtons = document.getElementById("answer-buttons");
